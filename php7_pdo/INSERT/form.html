@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PHPからSQLのINSERT操作をする</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="title">PHPからSQLのINSERT操作をする</div>
+
+    <!-- form要素のmethod属性にpostを指定、action属性にデータの送信先のファイル名を指定する -->
+    <!-- input要素のname要素にデータの名前を設定する -->
+    <form name="form1" method="POST" action="view.php">
+        <label for="last_name">氏：</label>
+        <input type="text" name="last_name" id="last_name">    <!-- $_POST['last_name']で取得 -->
+        <br>
+        <label for="first_name">名：</label>
+        <input type="text" name="first_name" id="first_name">   <!-- $_POST['first_name']で取得 -->
+        <br>
+        <label for="age">年齢：</label>
+        <input type="text" name="age" id="age">          <!-- $_POST['age']で取得 -->
+        <br>
+        <input type="submit" value="送　信">
+    </form>
+</body>
+</html>

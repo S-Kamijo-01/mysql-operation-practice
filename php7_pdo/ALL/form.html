@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPからSQLの四大命令操作をする</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div>PHPからSQLの四大命令操作をする</div>
+        
+        <hr>
+        <p>新規登録画面</p>
+        <hr>
+        <p>[<a href="list.php">戻る</a>]</p><br>
+        
+        <form name="form1" method="POST" action="list.php">
+            <label for="last_name">氏：</label>
+            <input type="text" name="last_name" id="last_name">
+            <br>
+            <label for="first_name">名：</label>
+            <input type="text" name="first_name" id="first_name">
+            <br>
+            <label for="age">年齢：</label>
+            <input type="text" name="age" id="age">
+            <br>
+            <input type="hidden" name="action" value="insert">
+            <input type="submit" value="送信">
+        </form>
+    </body>
+</html>

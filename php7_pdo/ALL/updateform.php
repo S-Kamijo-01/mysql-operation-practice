@@ -45,7 +45,7 @@
         // データの表示
         if($count < 1){
             print "更新データがありません。<br>";
-        }else{
+        } else {
             $row = $stmh->fetch(PDO::FETCH_ASSOC);  
     ?>
 
